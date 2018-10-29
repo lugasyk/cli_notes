@@ -1,4 +1,3 @@
-from webbrowser import get
 
 notes = {}
 
@@ -18,7 +17,7 @@ def listener():
         elif listener_str == "List":
             print notes
         elif listener_str.startswith('Show'):
-            notes.get(index)
+            print notes.get(index)
         else:
             print ("Ooops, something went wrong...")
 
